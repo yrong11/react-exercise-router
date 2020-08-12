@@ -16,9 +16,10 @@
   margin-bottom: 40px;
   background-color: #cccccc;
 }
+
 .header ul {
   list-style: none;
-  background-color: #cccccc;
+  margin-top: 12px;
 }
 
 .header li {
@@ -27,7 +28,7 @@
   text-decoration: none;
 }
 
-.home1, .about-us, .profile {
+.home1, .about-us, .profile, .content{
   padding-top: 20px;
   padding-left: 30px;
 }
