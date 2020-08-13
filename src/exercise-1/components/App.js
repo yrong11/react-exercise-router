@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
-import { BrowserRouter, Route, NavLink, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 import Home from './Home'
 import AboutUs from './AboutUs'
 import Profile from './Profile'
@@ -20,12 +20,13 @@ class App extends Component {
           </nav>
 
           <switch>
+            {/* <Redirect from='/goods' to='/products' /> */}
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/products" component={Products}></Route>
             <Route path="/my-profile" component={Profile}></Route>
             <Route path="/about-us" component={AboutUs}></Route>
             <Route path='/products/:id' component={Product} />
-            <Redirect from='/goods' to='/products' />
+            
           </switch>
         </BrowserRouter>
       </div>
